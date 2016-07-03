@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_theme">#FF009BDF</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_white">#FFFEFEFE</color>
+    <color name="trans_white">#EEFFFFFF</color>
+    <color name="grey">#FF707070</color>
+    <color name="light_grey">#FFC0C0C0</color>
+    <color name="divider">#FFE0E0E0</color>
+    <color name="grey_bg">#FFF0F0F0</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#FF000000</color>
+    <color name="light_black">#FF444444</color>
+    <color name="trans_dark">#88000000</color>
+    <color name="trans_grey">#11000000</color>
+    <color name="deep_green">#FF11AA11</color>
+    <color name="orange">#FFFFAA11</color>
+    <color name="gold">#FFFBD624</color>
+    <color name="deep_orange">#FFFF6611</color>
+    <color name="light_red">#FFDD1111</color>
+    <color name="deep_red">#FFAA1111</color>
+    <color name="green_blue">#FF009688</color>
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_bg"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="　　1、 配套服务点以珠江散步道为中心，设有商务中心、银行、海关、邮局、旅游、餐饮、票务等配套服务点。"
+            android:textColor="@color/grey"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/iv_img_1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/img_loading"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="　　2、 室内停车场可提供1800个室内停车位"
+            android:textColor="@color/grey"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/iv_img_2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/img_loading"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="　　3、 室外停车场可提供400个室外停车位。"
+            android:textColor="@color/grey"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/iv_img_3"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/img_loading"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:text="　　4、 洽谈间，会议中心等商务房间"
+            android:textColor="@color/grey"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/iv_img_4"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/img_loading"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="　　5、 广告载体灯箱、电子屏幕、户外广告牌等多种形式的广告载体，为客商提供了丰富的宣传渠道。"
+            android:textColor="@color/grey"
+            android:textSize="16sp"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

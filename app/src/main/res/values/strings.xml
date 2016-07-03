@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">会展导游</string>
+    <string name="little_text_size">小号字体 (较小)</string>
+    <string name="middle_text_size">中号字体 (标准)</string>
+    <string name="large_text_size">大号字体 (较大)</string>
+</resources>

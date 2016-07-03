@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_bg"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="　　亚洲最大的现代化展览中心——中国进出口商品交易会展馆(简称广交会展馆)座落于中国广州琶洲岛，将人性理念、绿色生态与高科技、智能化完美结合，如同璀璨的明珠闪亮于世界。"
+            android:textColor="@color/grey"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/iv_img_1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/img_loading"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="　　广州琶洲展览馆位于广州市海珠区琶洲岛。琶洲展馆首期占地41.4万平方米，建筑面积39.5万平方米，一、二层展厅13个，展示面积约13万平方米，室外展场面积2.2万平方米，于2002年底正式投入使用，二期展馆位于一期东面，延续了一期飘逸的造型，现代的风格，并通过平台相连。二期展馆总建筑面积与一期相当，约为39万平方米，占地面积27.4万平方米，室内展厅面积12.8万平方米。展厅主体3层，共13个展厅，每个展厅面积约1万平方米。室外展场面积1.36万平方米。"
+            android:textColor="@color/grey"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/iv_img_2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/img_loading"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="　　展馆总建筑面积110万平方米，室内展厅总面积33.8万平方米，室外展场面积4.36万平方米。其中展馆A区室内展厅面积13万平方米，室外展场面积3万平方米；B区室内展厅面积12.8万平方米，室外展场面积1.36万平方米；C区室内展厅面积8万平方米。"
+            android:textColor="@color/grey"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+</ScrollView>

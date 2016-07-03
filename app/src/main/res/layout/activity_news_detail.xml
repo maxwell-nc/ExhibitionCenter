@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/ll_root"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/grey_bg"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/main_theme">
+
+        <TextView
+            android:id="@+id/tv_mode_name"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:text="资讯阅读"
+            android:textColor="@color/white"
+            android:textSize="22sp"/>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="55dp"
+            app:mrl_rippleAlpha="0.3"
+            app:mrl_rippleColor="@color/white"
+            app:mrl_rippleDimension="20dp"
+            app:mrl_rippleOverlay="false">
+
+            <ImageView
+                android:id="@+id/iv_text_size"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@mipmap/btn_text_size"/>
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:mrl_rippleAlpha="0.3"
+            app:mrl_rippleColor="@color/white"
+            app:mrl_rippleDimension="20dp"
+            app:mrl_rippleOverlay="false">
+
+            <ImageView
+                android:id="@+id/iv_fullscreen"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@mipmap/btn_fullscreen"/>
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sv_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/ll_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_bg"
+            android:clipChildren="false"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textIsSelectable="true"
+                android:textSize="26sp"/>
+
+            <TextView
+                android:id="@+id/tv_source_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/main_theme"
+                android:textIsSelectable="true"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/grey"
+                android:textIsSelectable="true"
+                android:textSize="14sp"/>
+
+            <View
+                style="@style/hr_line"
+                android:layout_marginTop="8dp"/>
+
+            <com.meetic.shuffle.Shuffle
+                android:id="@+id/shuffle"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:shuffle_colorLeft="@color/trans_dark"
+                app:shuffle_colorRight="@color/trans_dark"
+                app:shuffle_numberOfDisplayedCards="3"
+                app:shuffle_differenceTranslationY="8dp"
+                app:shuffle_differenceTranslationX="5dp"/>
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:textColor="@color/grey"
+                android:textIsSelectable="true"
+                android:textSize="17sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

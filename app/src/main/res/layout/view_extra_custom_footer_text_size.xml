@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:background="@color/grey_bg"
+              android:orientation="horizontal">
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:mrl_rippleAlpha="0.5"
+        app:mrl_rippleBackground="@color/grey_bg"
+        app:mrl_rippleColor="@color/white"
+        app:mrl_rippleDimension="1dp"
+        app:mrl_rippleOverlay="false">
+
+        <ImageView
+            android:id="@+id/iv_desc"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="center"
+            android:src="@mipmap/btn_desc_grey"/>
+
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="5dp"
+        android:background="@mipmap/img_divider_grey"/>
+
+    <TextView
+        android:id="@+id/tv_size"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="18sp"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="5dp"
+        android:background="@mipmap/img_divider_grey"/>
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:mrl_rippleAlpha="0.5"
+        app:mrl_rippleBackground="@color/grey_bg"
+        app:mrl_rippleColor="@color/white"
+        app:mrl_rippleDimension="1dp"
+        app:mrl_rippleOverlay="false">
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="center"
+            android:src="@mipmap/btn_add_grey"/>
+
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+</LinearLayout>

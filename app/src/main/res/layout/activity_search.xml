@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/ll_root"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/grey_bg"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/main_theme"
+        android:orientation="horizontal">
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:mrl_rippleAlpha="0.3"
+            app:mrl_rippleColor="@color/white"
+            app:mrl_rippleDimension="1dp">
+
+            <ImageView
+                android:id="@+id/iv_right"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:src="@mipmap/img_back"/>
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <EditText
+            android:id="@+id/et_text"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_search_bg"
+            android:clickable="true"
+            android:drawableLeft="@mipmap/img_search"
+            android:drawablePadding="5dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:hint="请输入搜索关键字"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/grey"
+            android:textSize="14sp"/>
+
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:mrl_rippleAlpha="0.3"
+            app:mrl_rippleColor="@color/white"
+            app:mrl_rippleDimension="1dp">
+
+            <TextView
+                android:id="@+id/tv_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="搜索"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="热门搜索"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            style="@style/search_label_ripple">
+
+            <TextView
+                android:id="@+id/label_1"
+                style="@style/search_label"/>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            style="@style/search_label_ripple">
+
+            <TextView
+                android:id="@+id/label_2"
+                style="@style/search_label"/>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            style="@style/search_label_ripple">
+
+            <TextView
+                android:id="@+id/label_3"
+                style="@style/search_label"/>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            style="@style/search_label_ripple">
+
+            <TextView
+                android:id="@+id/label_4"
+                style="@style/search_label"/>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            style="@style/search_label_ripple">
+
+            <TextView
+                android:id="@+id/label_5"
+                style="@style/search_label"/>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            style="@style/search_label_ripple">
+
+            <TextView
+                android:id="@+id/label_6"
+                style="@style/search_label"/>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            style="@style/search_label_ripple">
+
+            <TextView
+                android:id="@+id/label_7"
+                style="@style/search_label"/>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            style="@style/search_label_ripple">
+
+            <TextView
+                android:id="@+id/label_8"
+                style="@style/search_label"/>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            style="@style/search_label_ripple">
+
+            <TextView
+                android:id="@+id/label_9"
+                style="@style/search_label"/>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_history"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="历史搜索"
+        android:textSize="16sp"/>
+
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/mrl_his_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        app:mrl_rippleAlpha="0.7"
+        app:mrl_rippleBackground="@color/white"
+        app:mrl_rippleColor="@color/grey_bg"
+        app:mrl_rippleDimension="1dp"
+        app:mrl_rippleOverlay="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:padding="14dp"
+                android:src="@mipmap/icon_time"/>
+
+            <TextView
+                android:id="@+id/tv_his_1"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@mipmap/img_setting_more"/>
+
+        </LinearLayout>
+
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/mrl_his_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        app:mrl_rippleAlpha="0.7"
+        app:mrl_rippleBackground="@color/white"
+        app:mrl_rippleColor="@color/grey_bg"
+        app:mrl_rippleDimension="1dp"
+        app:mrl_rippleOverlay="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:padding="14dp"
+                android:src="@mipmap/icon_time"/>
+
+            <TextView
+                android:id="@+id/tv_his_2"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@mipmap/img_setting_more"/>
+
+        </LinearLayout>
+
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/mrl_his_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        app:mrl_rippleAlpha="0.7"
+        app:mrl_rippleBackground="@color/white"
+        app:mrl_rippleColor="@color/grey_bg"
+        app:mrl_rippleDimension="1dp"
+        app:mrl_rippleOverlay="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:padding="14dp"
+                android:src="@mipmap/icon_time"/>
+
+            <TextView
+                android:id="@+id/tv_his_3"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@mipmap/img_setting_more"/>
+
+        </LinearLayout>
+
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/mrl_his_clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        app:mrl_rippleAlpha="0.7"
+        app:mrl_rippleBackground="@color/white"
+        app:mrl_rippleColor="@color/grey_bg"
+        app:mrl_rippleDimension="1dp"
+        app:mrl_rippleOverlay="false">
+
+        <TextView
+            android:id="@+id/tv_his_clear"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="清除历史记录"
+            android:textSize="16sp"/>
+
+
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+</LinearLayout>

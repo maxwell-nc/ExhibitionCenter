@@ -1,0 +1,99 @@
+<manifest
+    package="graduation.project.exhibition"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".AppApplication"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivity"/>
+        <!-- 设置为singleTask防止多次启动 -->
+        <activity
+            android:name="other.activity.WelcomeActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activity.setting.AboutActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activity.setting.CheckNetworkActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activity.setting.ShareActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activity.EasterEggActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activity.home.ShowroomActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activity.home.SelectAreaActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activity.info.NewsDetailActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activity.info.ActivitiesDetailActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activity.discover.ItemActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activity.discover.DiscoverDetailActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activity.base.SearchActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activity.discover.DiscoverResultActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activity.setting.UpdateActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activity.setting.FeedbackActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activity.setting.UserActivity"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name=".activity.home.CompanyActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activity.home.CompanyDetailActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activity.home.ProductDetailActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activity.home.HomeResultActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activity.home.MapActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activity.home.IntroActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activity.home.CooperationActivity"
+            android:launchMode="singleTask"/>
+        <!-- 自带防止多重启动功能 -->
+        <activity android:name=".activity.home.ScanActivity"/>
+    </application>
+
+</manifest>

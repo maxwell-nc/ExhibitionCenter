@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/grey_bg"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/main_theme">
+
+        <com.fenjuly.library.ArrowDownloadButton
+            android:id="@+id/adb_check"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_bg_theme_btn"
+        app:mrl_rippleAlpha="0.5"
+        app:mrl_rippleBackground="@color/white"
+        app:mrl_rippleColor="@color/grey_bg">
+
+        <TextView
+            android:id="@+id/tv_down"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="下载更新"
+            android:textColor="@color/main_theme"
+            android:textSize="22sp"/>
+
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+    <View
+        style="@style/hr_line"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/grey"
+        android:textSize="16sp"/>
+
+
+</LinearLayout>

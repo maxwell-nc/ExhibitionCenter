@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/tv_next_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="速递展览会信息"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/shape_bg_theme_btn"
+        android:textColor="@color/main_theme"
+        app:x_in="1.2"
+        app:x_out="1.2"/>
+
+    <ImageView
+        android:layout_width="153dp"
+        android:layout_height="83dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="27dp"
+        android:src="@mipmap/img_welcome_page2_item_1"
+        app:x_in="1.5"
+        app:x_out="1.5" />
+
+    <ImageView
+        android:layout_width="158dp"
+        android:layout_height="39dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="195dp"
+        android:background="@mipmap/img_welcome_page1_item_4"
+        app:x_in="1.1"
+        app:x_out="1.1" />
+
+    <ImageView
+        android:layout_width="129dp"
+        android:layout_height="34dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="128dp"
+        android:src="@mipmap/img_welcome_page2_item_2"
+        app:x_in="1"
+        app:x_out="0.8" />
+
+
+    <ImageView
+        android:layout_width="165dp"
+        android:layout_height="68dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="167dp"
+        android:src="@mipmap/img_welcome_page2_item_3"
+        app:x_in="1"
+        app:x_out="1" />
+
+    <ImageView
+        android:layout_width="221dp"
+        android:layout_height="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="17dp"
+        android:layout_marginLeft="57dp"
+        android:src="@mipmap/img_welcome_page2_item_7"
+        app:a_in="1"
+        app:a_out="1"
+        app:x_in="1"
+        app:x_out="1" />
+
+    <ImageView
+        android:layout_width="263dp"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="22dp"
+        android:src="@mipmap/img_welcome_page2_item_5"
+        app:a_in="0.8"
+        app:a_out="0.8"
+        app:x_in="0.8"
+        app:x_out="0.8" />
+
+    <ImageView
+        android:layout_width="93dp"
+        android:layout_height="205dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="19dp"
+        android:src="@mipmap/img_welcome_page2_item_4"
+        app:x_in="1"
+        app:x_out="1" />
+
+    <ImageView
+        android:layout_width="52dp"
+        android:layout_height="11dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="26dp"
+        android:layout_marginLeft="32dp"
+        android:src="@mipmap/img_welcome_page2_item_6"
+        app:x_in="1"
+        app:x_out="1" />
+
+</RelativeLayout>

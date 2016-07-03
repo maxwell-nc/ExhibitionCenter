@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/grey_bg"
+              android:orientation="vertical">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey_bg"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            style="@style/select_area_btn_effect">
+
+            <RadioButton
+                style="@style/select_area_radio_btn"
+                android:layout_marginLeft="0dp"
+                android:checked="true"
+                android:onClick="radioClick"
+                android:text="A区"/>
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            style="@style/select_area_btn_effect">
+
+            <RadioButton
+                style="@style/select_area_radio_btn"
+                android:onClick="radioClick"
+                android:text="B区"/>
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            style="@style/select_area_btn_effect">
+
+            <RadioButton
+                style="@style/select_area_radio_btn"
+                android:onClick="radioClick"
+                android:text="C区"/>
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            style="@style/select_area_btn_effect">
+
+            <RadioButton
+                style="@style/select_area_radio_btn"
+                android:onClick="radioClick"
+                android:text="D区"/>
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            style="@style/select_area_btn_effect"
+            android:layout_weight="2">
+
+            <RadioButton
+                style="@style/select_area_radio_btn"
+                android:layout_weight="2"
+                android:onClick="radioClick"
+                android:text="现代2.0区"/>
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+    </RadioGroup>
+
+</LinearLayout>

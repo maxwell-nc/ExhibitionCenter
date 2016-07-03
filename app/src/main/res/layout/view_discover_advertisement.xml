@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:layout_marginTop="10dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="0dp"
+    app:cardPreventCornerOverlap="true"
+    app:contentPadding="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/mrl_group_1"
+            style="@style/discover_btn_effect"
+            android:layout_width="150dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/banner_1"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="金罐加多宝"
+                    android:textColor="@color/gold"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="2dp"
+                    android:text="买十送三 多买多送"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/img_redpack"/>
+
+            </LinearLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <View
+            style="@style/vt_line"
+            android:layout_width="0.5dp"
+            android:layout_toRightOf="@+id/mrl_group_1"/>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/mrl_group_2"
+            style="@style/discover_btn_effect"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_toRightOf="@+id/mrl_group_1">
+
+            <RelativeLayout
+                android:id="@+id/banner_2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="7天连锁酒店"
+                    android:textColor="@color/deep_orange"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_title"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="2dp"
+                    android:text="五折入住酒店"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentRight="true"
+                    android:padding="10dp"
+                    android:scaleType="center"
+                    android:src="@mipmap/icon_seven_inn"/>
+
+
+                <View
+                    style="@style/hr_line"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/mrl_group_2"
+            android:layout_toRightOf="@id/mrl_group_1">
+
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                style="@style/discover_btn_effect">
+
+                <LinearLayout
+                    android:id="@+id/banner_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="免费门票"
+                        android:textColor="@color/green_blue"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="2dp"
+                        android:text="极地海洋世界"
+                        android:textColor="@color/grey"
+                        android:textSize="12sp"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/img_ticket"/>
+
+
+                </LinearLayout>
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <View
+                style="@style/vt_line"
+                android:layout_width="0.5dp"/>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                style="@style/discover_btn_effect">
+
+                <LinearLayout
+                    android:id="@+id/banner_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="音乐之旅"
+                        android:textColor="@color/deep_red"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="2dp"
+                        android:text="戏剧之夜"
+                        android:textColor="@color/grey"
+                        android:textSize="12sp"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/icon_fm"/>
+
+                </LinearLayout>
+            </com.balysv.materialripple.MaterialRippleLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

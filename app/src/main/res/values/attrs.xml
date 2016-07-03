@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 欢迎页面 -->
+    <declare-styleable name="WelcomeAnim">
+        <attr name="a_in" format="float"/>
+        <attr name="a_out" format="float"/>
+        <attr name="x_in" format="float"/>
+        <attr name="x_out" format="float"/>
+        <attr name="y_in" format="float"/>
+        <attr name="y_out" format="float"/>
+    </declare-styleable>
+
+    <!-- 圆形ImageView -->
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension"/>
+        <attr name="border_color" format="color"/>
+    </declare-styleable>
+
+    <!-- 切换按钮 -->
+    <declare-styleable name="ToggleButton">
+        <attr name="button_border_width" format="dimension"/>
+        <attr name="offBorderColor" format="reference|color"/>
+        <attr name="offColor" format="reference|color"/>
+        <attr name="onColor" format="reference|color"/>
+        <attr name="spotColor" format="reference|color"/>
+        <attr name="animate" format="reference|boolean"/>
+        <attr name="isDefaultOn" format="reference|boolean"/>
+    </declare-styleable>
+
+    <!-- 卡片 -->
+    <declare-styleable name="card">
+        <attr name="bottomMarginTop" format="dimension" />
+        <attr name="yOffsetStep" format="dimension" />
+    </declare-styleable>
+</resources>

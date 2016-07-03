@@ -1,0 +1,129 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"/>
+
+    <!-- 水平分割线 -->
+    <style name="hr_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/divider</item>
+    </style>
+
+    <!-- 垂直分割线 -->
+    <style name="vt_line">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/divider</item>
+    </style>
+
+    <!-- 对话框动画效果 -->
+    <style name="anim_dialog_style">
+        <item name="android:windowEnterAnimation">@anim/anim_dialog_zoom_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_dialog_zoom_out</item>
+    </style>
+
+    <!-- 对话框 -->
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+    <!-- 看资讯Banner -->
+    <style name="BannerDefaultStyle">
+        <!-- 开启自动轮播 -->
+        <item name="banner_pointAutoPlayAble">true</item>
+        <!-- 自动轮播的时间间隔 -->
+        <item name="banner_pointAutoPlayInterval">5000</item>
+        <!-- 指示点容器左右内间距 -->
+        <item name="banner_pointContainerLeftRightPadding">10dp</item>
+        <!-- 指示点容器背景 -->
+        <item name="banner_pointContainerBackground">@color/trans_dark</item>
+        <!-- 指示点上下外间距 -->
+        <item name="banner_pointTopBottomMargin">12dp</item>
+        <!-- 指示点左右外间距 -->
+        <item name="banner_pointLeftRightMargin">3dp</item>
+        <!-- 指示点的位置 -->
+        <item name="banner_pointGravity">right|bottom</item>
+        <!-- 页码切换过程的时间长度 -->
+        <item name="banner_pageChangeDuration">400</item>
+        <!-- 提示文案的文字大小 -->
+        <item name="banner_tipTextSize">16sp</item>
+        <!-- 提示文案的文字颜色 -->
+        <item name="banner_tipTextColor">@android:color/white</item>
+        <!-- 页面切换的动画效果 -->
+        <item name="banner_transitionEffect">zoomCenter</item>
+    </style>
+
+    <!-- 附近的按钮 -->
+    <style name="discover_btn">
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <!-- 附近的按钮点击效果 -->
+    <style name="discover_btn_effect">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="mrl_rippleAlpha">0.6</item>
+        <item name="mrl_rippleColor">@color/grey_bg</item>
+        <item name="mrl_rippleDimension">1dp</item>
+    </style>
+
+    <!-- 选区域的按钮效果 -->
+    <style name="select_area_btn_effect">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="mrl_rippleAlpha">0.3</item>
+        <item name="mrl_rippleOverlay">true</item>
+        <item name="mrl_rippleDimension">0.1dp</item>
+        <item name="mrl_rippleColor">@color/white</item>
+    </style>
+
+    <!-- 选区域的按钮 -->
+    <style name="select_area_radio_btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/selector_check_btn</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+
+    <!-- 热门搜索标签 -->
+    <style name="search_label">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">0.5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- 热门搜索标签效果 -->
+    <style name="search_label_ripple">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">0.5dp</item>
+        <item name="mrl_rippleAlpha">0.7</item>
+        <item name="mrl_rippleBackground">@color/white</item>
+        <item name="mrl_rippleColor">@color/grey_bg</item>
+        <item name="mrl_rippleDimension">1dp</item>
+        <item name="mrl_rippleOverlay">false</item>
+    </style>
+
+</resources>

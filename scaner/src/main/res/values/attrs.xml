@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="OverlayView">
+        <attr name="bounds_left" format="dimension"/>
+        <attr name="bounds_top" format="dimension"/>
+        <attr name="bounds_width" format="dimension"/>
+        <attr name="bounds_height" format="dimension"/>
+        <attr name="bounds_margin_top" format="dimension"/>
+
+        <attr name="corner_stroke_width" format="dimension"/>
+        <attr name="corner_length" format="dimension"/>
+        <attr name="corner_color" format="color"/>
+
+        <attr name="scan_line_color" format="color"/>
+        <attr name="scan_line_height" format="dimension"/>
+        <attr name="scan_line_speed" format="integer"/>
+
+        <attr name="hint_color" format="color"/>
+        <attr name="hint_text" format="string"/>
+        <attr name="hint_size" format="dimension"/>
+        <attr name="hint_margin_top" format="dimension"/>
+    </declare-styleable>
+
+</resources>

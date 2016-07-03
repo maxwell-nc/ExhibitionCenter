@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/main_theme">
+
+        <com.sevenheaven.segmentcontrol.SegmentControl
+            android:id="@+id/segment_control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="18sp"
+            app:colors="@color/white"
+            app:cornerRadius="5dp"
+            app:direction="horizon"
+            app:stroke_inner_width="2dp"
+            app:stroke_width="2dp"
+            app:textSelectedColors="@color/main_theme"
+            app:texts="广告合作|增值服务"
+            app:verticalGap="10dp"/>
+
+    </FrameLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
